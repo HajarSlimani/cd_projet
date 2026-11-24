@@ -55,7 +55,7 @@ pipeline {
             steps {
                 bat '''
                 if not exist C:\\DEV mkdir C:\\DEV
-                xcopy Release C:\\DEV /E /I /Y
+                C:\\Windows\\System32\\xcopy.exe Release C:\\DEV /E /I /Y
                 '''
             }
         }
@@ -74,7 +74,7 @@ pipeline {
             steps {
                 bat '''
                 if not exist C:\\TEST mkdir C:\\TEST
-                xcopy Release C:\\TEST /E /I /Y
+                C:\\Windows\\System32\\xcopy.exe Release C:\\TEST /E /I /Y
                 '''
             }
         }
@@ -93,7 +93,7 @@ pipeline {
             steps {
                 bat '''
                 if not exist C:\\UAT mkdir C:\\UAT
-                xcopy Release C:\\UAT /E /I /Y
+                C:\\Windows\\System32\\xcopy.exe Release C:\\UAT /E /I /Y
                 '''
             }
         }
@@ -101,7 +101,7 @@ pipeline {
             steps {
                 bat '''
                 if not exist C:\\STAGING mkdir C:\\STAGING
-                xcopy Release C:\\STAGING /E /I /Y
+                C:\\Windows\\System32\\xcopy.exe Release C:\\STAGING /E /I /Y
                 '''
             }
         }
@@ -114,7 +114,7 @@ pipeline {
             steps {
                 bat '''
                 if not exist C:\\PRODUCTION mkdir C:\\PRODUCTION
-                xcopy Release C:\\PRODUCTION /E /I /Y
+                C:\\Windows\\System32\\xcopy.exe Release C:\\PRODUCTION /E /I /Y
                 '''
             }
         }
